@@ -1,0 +1,82 @@
+DAY 1
+1:
+moveRight();
+moveRight();
+useBlue();
+draw();
+
+2:
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+moveRight();
+moveRight();
+erase();
+
+3:
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+moveRight();
+erase();
+moveRight();
+moveRight();
+erase();
+
+4:
+moveRight();
+useBlue();
+draw();
+moveRight();
+moveRight();
+useBlue();
+draw();
+
+5:
+erase();
+  moveRight();
+  moveRight();
+  moveRight();
+  moveRight();
+  useBlue();
+  draw();
+
+  erase();
+    moveRight();
+    moveRight();
+    moveRight();
+    moveRight();
+    useGreen();
+    draw();
+
+  nothing
+
+  -------------------------
+
+  DAY2
+  1
+    if (onBlue())
+    {
+      moveRight();
+      useBlue();
+      draw();
+    }
+2
+for ( i = 0; i < initial_state.length ; i++)
+{
+  if (onBlue())
+  {
+    moveRight();
+    useBlue();
+    draw();
+  }
+
+}
+3
+for ( i = 0; i < n ; i++)
+{
+  if (onBlue())
+  {
+    moveRight();
+    useBlue();
+    draw();
+  }
+}
+
+4

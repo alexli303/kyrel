@@ -19,7 +19,7 @@ var row, colors, kyrel, return_value, rando;
     'g' => green
 */
 
-var initial_state = [ '.', '.', '.', '.', '.' ];
+var initial_state = ['b', 'b', 'b', 'b', 'b']
 
 function main(n) {
 
@@ -29,6 +29,15 @@ function main(n) {
   ////                          ////
   //////////////////////////////////
 
+  for ( i = 0; i < initial_state.length ; i++)
+  {
+    if (i%2 === 0)
+    {
+      moveRight(),
+      moveRight(),
+      erase();
+    }
+  }
 
 
   //////////////////////////////////
@@ -158,4 +167,3 @@ $(document).ready(function() {
   initializeRow();
   updateRow();
 });
-
