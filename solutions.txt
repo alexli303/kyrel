@@ -80,3 +80,45 @@ for ( i = 0; i < n ; i++)
 }
 
 4
+
+for ( i = 0; i < initial_state.length ; i++)
+{
+  if ((i+2)%2==0)
+  {
+    erase();
+  }
+  moveRight();
+}
+
+5
+for ( i = 0; i < initial_state.length ; i++)
+{
+  if ((i+3)%2==0)
+  {
+    erase();
+  }
+  moveRight();
+}
+
+6
+for ( i = 0; i < initial_state.length ; i++)
+{
+  if (i%n == 0)
+  {
+    erase();
+  }
+  moveRight();
+}
+
+7
+for ( i = 0; i < initial_state.length ; i++)
+{
+  if (onBlue())
+  {
+    erase();
+    moveRight();
+    useBlue();
+    draw();
+  }
+  moveRight();
+}
